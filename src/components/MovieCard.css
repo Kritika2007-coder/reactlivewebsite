@@ -1,0 +1,27 @@
+.movie-card-link {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd; /* Border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Padding */
+  transition: box-shadow 0.3s; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-align: center; /* Center text */
+  background-color: #fff; /* Background color */
+}
+
+.movie-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for the image */
+}

@@ -1,49 +1,54 @@
-table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    text-align: left;
-    padding: 8px;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .pagination {
-    margin-top: 20px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    table, th, td {
-      display: block;
-      width: 100%;
-    }
-  
-    th {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-  
-    td {
-      border: none;
-      position: relative;
-      padding-left: 50%;
-      text-align: left;
-    }
-  
-    td:before {
-      content: attr(data-label);
-      position: absolute;
-      left: 10px;
-      font-weight: bold;
-    }
-  }
-  
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #120f31;
+  font-family: 'Arial', sans-serif;
+  color: white; /* This ensures the text is readable against the dark background */
+}
+
+.movie-list-container, 
+.movie-details-container {
+  background-color: #201b53;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+li a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+li a:hover {
+  color: #23527c;
+}
+.movie-details {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details h1 {
+  margin-top: 0;
+}
+
+.movie-details p {
+  margin-bottom: 20px;
+}
